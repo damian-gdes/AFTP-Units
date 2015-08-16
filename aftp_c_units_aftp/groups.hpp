@@ -9,7 +9,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_wz93 {
 								name = "Diver team"
-								faction = "AFTP Units Pantera";
+								faction = "aftp_units_wz93";
+																		rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_wz93 {
                                                 side = 1;
@@ -36,9 +37,28 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
-														class sfoperators_wz93 {
+							class Sniperteam_wz93 {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_wz93";
+																		rarityGroup = 0.5; //Faction
+                                        side = 1;
+                                        class st01_aftp_wz93 {
+                                                side = 1;
+                                                vehicle = "aftp_05_wz93"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_wz93 {
+                                                side = 1;
+                                                vehicle = "aftp_05_wz93";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
+							class sfoperators_wz93 {
 								name = "SF Team"
-								faction = "AFTP Units Pantera";
+								faction = "aftp_units_wz93";
+																		rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_wz93 {
                                                 side = 1;
@@ -70,7 +90,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_wz93 {
                                         name = "Fireteam";
-                                        faction = "AFTP Units Pantera";
+                                        faction = "aftp_units_wz93";
+																				rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_wz93 {
                                                 side = 1;
@@ -99,27 +120,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_wz93 {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units Pantera"; //Faction
-                                        side = 1;
-                                        class st01_aftp_wz93 {
-                                                side = 1;
-                                                vehicle = "aftp_05_wz93"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_wz93 {
-                                                side = 1;
-                                                vehicle = "aftp_05_wz93";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_wz93 {
                                         name = "Squad";
-                                        faction = "AFTP Units Pantera"; //Faction
+                                        faction = "aftp_units_wz93";
+																		rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class sq01_aftp_wz93 {
                                                 side = 1;
@@ -174,15 +180,15 @@ class CfgGroups {
                                 };
                         };
                 };	
-				
-				                class aftp_units_wzd93 {
+				class aftp_units_wzd93 {
                         name = "AFTP Pantera Desert Company";
 						
 						class SpecOps {
 							name ="SF Operators";
 							class divers_wzd93 {
 								name = "Diver team"
-								faction = "AFTP Units Pantera Desert";
+								faction = "aftp_units_wzd93";
+								rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_wzd93 {
                                                 side = 1;
@@ -209,9 +215,31 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
+							
+															class Sniperteam_wzd93 {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_wzd93";
+																				rarityGroup = 0.5; //Faction //Faction
+                                        side = 1;
+                                        class st01_aftp_wzd93 {
+                                                side = 1;
+                                                vehicle = "aftp_05_wzd93"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_wzd93 {
+                                                side = 1;
+                                                vehicle = "aftp_05_wzd93";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
+							
+							
 														class sfoperators_wzd93 {
 								name = "SF Team"
-								faction = "AFTP Units Pantera Desert";
+								faction = "aftp_units_wzd93";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_wzd93 {
                                                 side = 1;
@@ -243,7 +271,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_wzd93 {
                                         name = "Fireteam";
-                                        faction = "AFTP Units Pantera Desert";
+                                        faction = "aftp_units_wzd93";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_wzd93 {
                                                 side = 1;
@@ -272,27 +301,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_wzd93 {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units Pantera Desert"; //Faction
-                                        side = 1;
-                                        class st01_aftp_wzd93 {
-                                                side = 1;
-                                                vehicle = "aftp_05_wzd93"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_wzd93 {
-                                                side = 1;
-                                                vehicle = "aftp_05_wzd93";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_wzd93 {
                                         name = "Squad";
-                                        faction = "AFTP Units Pantera Desert"; //Faction
+                                        faction = "aftp_units_wzd93";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_wzd93 {
                                                 side = 1;
@@ -355,7 +369,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_mc {
 								name = "Diver team"
-								faction = "AFTP Units Multicam";
+								faction = "aftp_units_mc";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_mc {
                                                 side = 1;
@@ -382,9 +397,29 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
+							
+															class Sniperteam_mc {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_mc";
+										rarityGroup = 0.5; //Faction //Faction
+                                        side = 1;
+                                        class st01_aftp_mc {
+                                                side = 1;
+                                                vehicle = "aftp_05_mc"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_mc {
+                                                side = 1;
+                                                vehicle = "aftp_05_mc";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
 														class sfoperators_mc {
 								name = "SF Team"
-								faction = "AFTP Units Multicam";
+								faction = "aftp_units_mc";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_mc {
                                                 side = 1;
@@ -416,7 +451,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_mc {
                                         name = "Fireteam";
-                                        faction = "AFTP Units Multicam";
+                                        faction = "aftp_units_mc";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_mc {
                                                 side = 1;
@@ -445,27 +481,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_mc {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units Multicam"; //Faction
-                                        side = 1;
-                                        class st01_aftp_mc {
-                                                side = 1;
-                                                vehicle = "aftp_05_mc"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_mc {
-                                                side = 1;
-                                                vehicle = "aftp_05_mc";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_mc {
                                         name = "Squad";
-                                        faction = "AFTP Units Multicam"; //Faction
+                                        faction = "aftp_units_mc";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_mc {
                                                 side = 1;
@@ -528,7 +549,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_mct {
 								name = "Diver team"
-								faction = "AFTP Units Multicam Tropic";
+								faction = "aftp_units_mct";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_mct {
                                                 side = 1;
@@ -555,9 +577,29 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
+							
+															class Sniperteam_mct {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_mct";
+										rarityGroup = 0.5; //Faction //Faction
+                                        side = 1;
+                                        class st01_aftp_mct {
+                                                side = 1;
+                                                vehicle = "aftp_05_mct"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_mct {
+                                                side = 1;
+                                                vehicle = "aftp_05_mct";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
 														class sfoperators_mct {
 								name = "SF Team"
-								faction = "AFTP Units Multicam Tropic";
+								faction = "aftp_units_mct";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_mct {
                                                 side = 1;
@@ -589,7 +631,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_mct {
                                         name = "Fireteam";
-                                        faction = "AFTP Units Multicam Tropic";
+                                        faction = "aftp_units_mct";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_mct {
                                                 side = 1;
@@ -618,27 +661,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_mct {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units Multicam Tropic"; //Faction
-                                        side = 1;
-                                        class st01_aftp_mct {
-                                                side = 1;
-                                                vehicle = "aftp_05_mct"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_mct {
-                                                side = 1;
-                                                vehicle = "aftp_05_mct";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_mct {
                                         name = "Squad";
-                                        faction = "AFTP Units Multicam Tropic"; //Faction
+                                        faction = "aftp_units_mct";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_mct {
                                                 side = 1;
@@ -701,7 +729,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_aau {
 								name = "Diver team"
-								faction = "AFTP Units A-TACS AU";
+								faction = "aftp_units_aau";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_aau {
                                                 side = 1;
@@ -728,9 +757,30 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
+							
+															class Sniperteam_aau {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_aau";
+										rarityGroup = 0.5; //Faction //Faction
+                                        side = 1;
+                                        class st01_aftp_aau {
+                                                side = 1;
+                                                vehicle = "aftp_05_aau"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_aau {
+                                                side = 1;
+                                                vehicle = "aftp_05_aau";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
+							
 														class sfoperators_aau {
 								name = "SF Team"
-								faction = "AFTP Units A-TACS AU";
+								faction = "aftp_units_aau";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_aau {
                                                 side = 1;
@@ -762,7 +812,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_aau {
                                         name = "Fireteam";
-                                        faction = "AFTP Units A-TACS AU";
+                                        faction = "aftp_units_aau";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_aau {
                                                 side = 1;
@@ -791,27 +842,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_aau {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units A-TACS AU"; //Faction
-                                        side = 1;
-                                        class st01_aftp_aau {
-                                                side = 1;
-                                                vehicle = "aftp_05_aau"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_aau {
-                                                side = 1;
-                                                vehicle = "aftp_05_aau";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_aau {
                                         name = "Squad";
-                                        faction = "AFTP Units A-TACS AU"; //Faction
+                                        faction = "aftp_units_aau";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_aau {
                                                 side = 1;
@@ -874,7 +910,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_afg {
 								name = "Diver team"
-								faction = "AFTP Units A-TACS FG";
+								faction = "aftp_units_afg";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_afg {
                                                 side = 1;
@@ -901,9 +938,29 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
+							
+															class Sniperteam_afg {
+                                        name = "Sniper Team";
+                                        faction = "aftp_units_afg";
+										rarityGroup = 0.5; //Faction //Faction
+                                        side = 1;
+                                        class st01_aftp_afg {
+                                                side = 1;
+                                                vehicle = "aftp_05_afg"; //Class name of desired solider
+                                                rank = "SERGEANT"; // Rank
+                                                position[] = {0,0,0}; //Position in the formation
+                                        };
+                                        class st02_aftp_afg {
+                                                side = 1;
+                                                vehicle = "aftp_05_afg";
+                                                rank = "CORPORAL";
+                                                position[] = {1,0,0};
+                                        };
+                                };
 														class sfoperators_afg {
 								name = "SF Team"
-								faction = "AFTP Units A-TACS FG";
+								faction = "aftp_units_afg";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_afg {
                                                 side = 1;
@@ -935,7 +992,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_afg {
                                         name = "Fireteam";
-                                        faction = "AFTP Units A-TACS FG";
+                                        faction = "aftp_units_afg";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_afg {
                                                 side = 1;
@@ -964,27 +1022,12 @@ class CfgGroups {
                                         };
                                 };
 								
-								class Sniperteam_afg {
-                                        name = "Sniper Team";
-                                        faction = "AFTP Units A-TACS FG"; //Faction
-                                        side = 1;
-                                        class st01_aftp_afg {
-                                                side = 1;
-                                                vehicle = "aftp_05_afg"; //Class name of desired solider
-                                                rank = "SERGEANT"; // Rank
-                                                position[] = {0,0,0}; //Position in the formation
-                                        };
-                                        class st02_aftp_afg {
-                                                side = 1;
-                                                vehicle = "aftp_05_afg";
-                                                rank = "CORPORAL";
-                                                position[] = {1,0,0};
-                                        };
-                                };
+
 								
                                 class Squad_afg {
                                         name = "Squad";
-                                        faction = "AFTP Units A-TACS FG"; //Faction
+                                        faction = "aftp_units_afg";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_afg {
                                                 side = 1;
@@ -1047,7 +1090,8 @@ class CfgGroups {
 							name ="SF Operators";
 							class divers_ale {
 								name = "Diver team"
-								faction = "AFTP Units A-TACS LE";
+								faction = "aftp_units_ale";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_ale {
                                                 side = 1;
@@ -1076,7 +1120,8 @@ class CfgGroups {
 							};
 														class sfoperators_ale {
 								name = "SF Team"
-								faction = "AFTP Units A-TACS LE";
+								faction = "aftp_units_ale";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_ale {
                                                 side = 1;
@@ -1108,7 +1153,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_ale {
                                         name = "Fireteam";
-                                        faction = "AFTP Units A-TACS LE";
+                                        faction = "aftp_units_ale";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_ale {
                                                 side = 1;
@@ -1143,7 +1189,8 @@ class CfgGroups {
 								
 								class Sniperteam_ale {
                                         name = "Sniper Team";
-                                        faction = "AFTP Units A-TACS LE"; //Faction
+                                        faction = "aftp_units_ale";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class st01_aftp_ale {
                                                 side = 1;
@@ -1163,7 +1210,8 @@ class CfgGroups {
 								
                                 class Squad_ale {
                                         name = "Squad";
-                                        faction = "AFTP Units A-TACS LE"; //Faction
+                                        faction = "aftp_units_ale";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_ale {
                                                 side = 1;
@@ -1231,7 +1279,8 @@ class CfgGroups {
 							
 							class divers_mca {
 								name = "Diver team"
-								faction = "AFTP Units Multicam Alpine";
+								faction = "aftp_units_mca";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class dt01_aftp_mca {
                                                 side = 1;
@@ -1262,7 +1311,8 @@ class CfgGroups {
 							*/
 														class sfoperators_mca {
 								name = "SF Team"
-								faction = "AFTP Units Multicam Alpine";
+								faction = "aftp_units_mca";
+										rarityGroup = 0.5; //Faction
 								side = 1;
                                         class sf01_aftp_mca {
                                                 side = 1;
@@ -1294,7 +1344,8 @@ class CfgGroups {
                                 name = "Infantry";
                                 class Fireteam_mca {
                                         name = "Fireteam";
-                                        faction = "AFTP Units Multicam Alpine";
+                                        faction = "aftp_units_mca";
+										rarityGroup = 0.5; //Faction
                                         side = 1;
                                         class ft01_aftp_mca {
                                                 side = 1;
@@ -1329,7 +1380,8 @@ class CfgGroups {
 								
 								class Sniperteam_mca {
                                         name = "Sniper Team";
-                                        faction = "AFTP Units Multicam Alpine"; //Faction
+                                        faction = "aftp_units_mca";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class st01_aftp_mca {
                                                 side = 1;
@@ -1349,7 +1401,8 @@ class CfgGroups {
 								
                                 class Squad_mca {
                                         name = "Squad";
-                                        faction = "AFTP Units Multicam Alpine"; //Faction
+                                        faction = "aftp_units_mca";
+										rarityGroup = 0.5; //Faction //Faction
                                         side = 1;
                                         class sq01_aftp_mca {
                                                 side = 1;
