@@ -3,9 +3,12 @@
 	class B_Soldier_sniper_base_F;
 
 #define AuthorMacro author = "AFTP Golas & Waffel";
-#define Standard_Equipment ItemGPS,ItemMap,ItemCompass,ItemWatch,ItemRadio, FirstAidKit, FirstAidKit, FirstAidKit
+#define Standard_Equipment "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "FirstAidKit", "FirstAidKit", "FirstAidKit"
 #define Standard_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_MRCO_pointer_F", "hgun_Pistol_heavy_01_MRD_F"
+#define StandardDES_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_MRCO_plain_F", "hgun_Pistol_heavy_01_MRD_F"
 #define StandardGR_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_GL_MRCO_pointer_F", "hgun_Pistol_heavy_01_MRD_F"
+#define StandardGRDES_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_GL_plain_F", "hgun_Pistol_heavy_01_MRD_F"
+#define SF_Weapons "Throw", "Put", "Rangefinder", "arifle_TRG21_ARCO_pointer_F", "hgun_Pistol_heavy_01_MRD_F"
 #define StandardAR_Weapons "Throw", "Put", "Rangefinder", "LMG_Mk200_MRCO_F", "hgun_Pistol_heavy_01_MRD_F"
 #define Standard_Ammo "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag"
 #define StandardGR_Ammo "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Red", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell"
@@ -43,6 +46,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_wz93", "AFTP_vest01_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_wz93", "AFTP_vest01_wz93", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_wz93 : aftp_01_wz93 {
@@ -54,6 +59,8 @@
 		respawnWeapons[] = {StandardGR_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_hvest01_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_hvest01_wz93", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_wz93 : aftp_01_wz93 {
@@ -65,10 +72,14 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_wz93", "AFTP_hvest02_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_wz93", "AFTP_hvest02_wz93", Standard_Equipment};
 	};
 	
 	class aftp_sf_wz93 : aftp_01_wz93 {
 		scope = public;
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "SF Operator";
@@ -76,6 +87,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_wz93", "AFTP_vest01_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_wz93", "AFTP_vest01_wz93", Standard_Equipment};
 	};
 	
 	class aftp_02_wz93 : aftp_01_wz93 {
@@ -86,6 +99,8 @@
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest02_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest02_wz93", Standard_Equipment};
 	};
 	
 	class aftp_03_wz93 : aftp_01_wz93 {
@@ -104,7 +119,6 @@
 	
 	class aftp_04_wz93 : b_soldier_survival_F {
 		_generalMacro = "B_Soldier_F";
-
 		displayName = "Diver";
 		nakedUniform = "U_BasicBody";
 		faction = "aftp_units_wz93";
@@ -112,6 +126,8 @@
 		respawnWeapons[] = {Standard_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
+		linkedItems[] = {"AFTP_helmet03_wz93", "AFTP_vest02_wz93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_wz93", "AFTP_vest02_wz93", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_wz93";
@@ -127,7 +143,6 @@
 	
 	class aftp_05_wz93 : B_Soldier_sniper_base_F {
 		_generalMacro = "B_Soldier_F";
-
 		displayName = "Sniper";
 		nakedUniform = "U_BasicBody";
 		faction = "aftp_units_wz93";
@@ -147,11 +162,10 @@
 		attendant = true; 
 	};
 	
-			class aftp_01_wzd93 : aftp_01_wz93 {
+	class aftp_01_wzd93 : aftp_01_wz93 {
 		_generalMacro = "B_Soldier_base_F";
 		faction = "aftp_units_wzd93";
 		canCarryBackPack = 1;
-
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -162,12 +176,12 @@
 		uniformClass = "uni01_wzd93";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\aftp_units\data\uni_wzd93.paa"};
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest01_wzd93",Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest01_wzd93",Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		model = "\A3\Characters_F\BLUFOR\b_soldier_01.p3d";
@@ -178,6 +192,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_wzd93 : aftp_01_wzd93 {
@@ -185,10 +201,12 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Grenadier";
-		weapons[] = {StandardGR_Weapons};
-		respawnWeapons[] = {StandardGR_Weapons};
+		weapons[] = {StandardGRDES_Weapons};
+		respawnWeapons[] = {StandardGRDES_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_hvest01_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_hvest01_wzd93", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_wzd93 : aftp_01_wzd93 {
@@ -200,9 +218,13 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_hvest02_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_hvest02_wzd93", Standard_Equipment};
 	};
 	
 	class aftp_sf_wzd93 : aftp_01_wzd93 {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -211,6 +233,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
 	};
 	
 	class aftp_02_wzd93 : aftp_01_wzd93 {
@@ -221,6 +245,8 @@
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true;
+		linkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
 	};
 	
 	class aftp_03_wzd93 : aftp_01_wzd93 {
@@ -243,12 +269,12 @@
 		displayName = "Diver";
 		nakedUniform = "U_BasicBody";
 		faction = "aftp_units_wzd93";
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest01_wzd93",Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest01_wzd93",Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_wzd93";
@@ -272,8 +298,8 @@
 		respawnWeapons[] = {StandardS_Weapons};
 		magazines[] = {StandardS_Ammo};
 		respawnMagazines[] = {StandardS_Ammo};
-		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest01_wz93",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni05_wzd93";
@@ -301,8 +327,8 @@
 		uniformClass = "uni01_mc";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\aftp_units\data\uni_mc.paa"};
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
 		linkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest01_mc",Standard_Equipment};
@@ -317,6 +343,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_mc", "AFTP_vest01_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mc", "AFTP_vest01_mc", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_mc : aftp_01_mc {
@@ -324,10 +352,12 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Grenadier";
-		weapons[] = {StandardGR_Weapons};
-		respawnWeapons[] = {StandardGR_Weapons};
+		weapons[] = {StandardGRDES_Weapons};
+		respawnWeapons[] = {StandardGRDES_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_mc", "AFTP_hvest01_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mc", "AFTP_hvest01_mc", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_mc : aftp_01_mc {
@@ -339,9 +369,13 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_mc", "AFTP_hvest02_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mc", "AFTP_hvest02_mc", Standard_Equipment};
 	};
 	
 	class aftp_sf_mc : aftp_01_mc {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -350,6 +384,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_mc", "AFTP_vest01_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_mc", "AFTP_vest01_mc", Standard_Equipment};
 	};
 	
 	class aftp_02_mc : aftp_01_mc {
@@ -360,6 +396,8 @@
 		scopeCurator = 2;
 		displayName = "Medic - Pantera Desert";
 		attendant = true;
+		linkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest02_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest02_mc", Standard_Equipment};
 	};
 	
 	class aftp_02_mc : aftp_01_mc {
@@ -392,12 +430,12 @@
 		displayName = "Diver";
 		nakedUniform = "U_BasicBody";
 		faction = "aftp_units_mc";
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest01_mc",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest01_mc",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_mc", "AFTP_vest02_mc", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_mc", "AFTP_vest02_mc", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_mc";
@@ -466,6 +504,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_mct", "AFTP_vest01_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mct", "AFTP_vest01_mct", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_mct : aftp_01_mct {
@@ -477,6 +517,8 @@
 		respawnWeapons[] = {StandardGR_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_mct", "AFTP_hvest01_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mct", "AFTP_hvest01_mct", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_mct : aftp_01_mct {
@@ -488,9 +530,13 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_mct", "AFTP_hvest02_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mct", "AFTP_hvest02_mct", Standard_Equipment};
 	};
 	
 	class aftp_sf_mct : aftp_01_mct {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -499,6 +545,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_mct", "AFTP_vest01_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_mct", "AFTP_vest01_mct", Standard_Equipment};
 	};
 	
 	class aftp_02_mct : aftp_01_mct {
@@ -509,6 +557,8 @@
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest02_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest02_mct", Standard_Equipment};
 	};
 	
 	class aftp_03_mct : aftp_01_mct {
@@ -535,8 +585,8 @@
 		respawnWeapons[] = {Standard_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest01_mct",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest01_mct",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_mct", "AFTP_vest02_mct", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_mct", "AFTP_vest02_mct", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_mct";
@@ -605,6 +655,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_mca", "AFTP_vest01_mca", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mca", "AFTP_vest01_mca", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_mca : aftp_01_mca {
@@ -616,6 +668,8 @@
 		respawnWeapons[] = {StandardGR_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_mca", "AFTP_hvest01_mca", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mca", "AFTP_hvest01_mca", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_mca : aftp_01_mca {
@@ -627,9 +681,13 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_mca", "AFTP_hvest02_mca", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_mca", "AFTP_hvest02_mca", Standard_Equipment};
 	};
 	
 	class aftp_sf_mca : aftp_01_mca {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -638,6 +696,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_mca", "AFTP_vest01_mca", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_mca", "AFTP_vest01_mca", Standard_Equipment};
 	};
 	
 	class aftp_02_mca : aftp_01_mca {
@@ -648,6 +708,8 @@
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_mca", "AFTP_vest02_mca", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_mca", "AFTP_vest02_mca", Standard_Equipment};
 	};
 	
 	class aftp_03_mca : aftp_01_mca {
@@ -675,7 +737,6 @@
 		_generalMacro = "B_Soldier_base_F";
 		faction = "aftp_units_aau";
 		canCarryBackPack = 1;
-
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -686,8 +747,8 @@
 		uniformClass = "uni01_aau";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\aftp_units\data\uni_aau.paa"};
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
 		linkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest01_aau",Standard_Equipment};
@@ -702,6 +763,8 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_aau", "AFTP_vest01_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_aau", "AFTP_vest01_aau", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_aau : aftp_01_aau {
@@ -709,10 +772,12 @@
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Grenadier";
-		weapons[] = {StandardGR_Weapons};
-		respawnWeapons[] = {StandardGR_Weapons};
+		weapons[] = {StandardGRDES_Weapons};
+		respawnWeapons[] = {StandardGRDES_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_aau", "AFTP_hvest01_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_aau", "AFTP_hvest01_aau", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_aau : aftp_01_aau {
@@ -724,9 +789,13 @@
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_aau", "AFTP_hvest02_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_aau", "AFTP_hvest02_aau", Standard_Equipment};
 	};
 	
 	class aftp_sf_aau : aftp_01_aau {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -735,6 +804,8 @@
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_aau", "AFTP_vest01_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_aau", "AFTP_vest01_aau", Standard_Equipment};
 	};
 	
 	class aftp_02_aau : aftp_01_aau {
@@ -745,6 +816,8 @@
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest02_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest02_aau", Standard_Equipment};
 	};
 	
 	class aftp_03_aau : aftp_01_aau {
@@ -767,12 +840,12 @@
 		displayName = "Diver";
 		nakedUniform = "U_BasicBody";
 		faction = "aftp_units_aau";
-		weapons[] = {Standard_Weapons};
-		respawnWeapons[] = {Standard_Weapons};
+		weapons[] = {StandardDES_Weapons};
+		respawnWeapons[] = {StandardDES_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest01_aau",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest01_aau",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_aau", "AFTP_vest02_aau", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_aau", "AFTP_vest02_aau", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_aau";
@@ -815,7 +888,6 @@ class aftp_01_afg : B_Soldier_base_F {
 		_generalMacro = "B_Soldier_base_F";
 		faction = "aftp_units_afg";
 		canCarryBackPack = 1;
-
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -842,6 +914,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_afg", "AFTP_vest01_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_afg", "AFTP_vest01_afg", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_afg : aftp_01_afg {
@@ -853,6 +927,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {StandardGR_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_afg", "AFTP_hvest01_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_afg", "AFTP_hvest01_afg", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_afg : aftp_01_afg {
@@ -864,9 +940,13 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_afg", "AFTP_hvest02_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_afg", "AFTP_hvest02_afg", Standard_Equipment};
 	};
 	
 	class aftp_sf_afg : aftp_01_afg {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -875,6 +955,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_afg", "AFTP_vest01_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_afg", "AFTP_vest01_afg", Standard_Equipment};
 	};
 	
 	class aftp_02_afg : aftp_01_afg {
@@ -885,6 +967,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest02_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest02_afg", Standard_Equipment};
 	};
 	
 	class aftp_03_afg : aftp_01_afg {
@@ -911,8 +995,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {Standard_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest01_afg",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest01_afg",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_afg", "AFTP_vest02_afg", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_afg", "AFTP_vest02_afg", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_afg";
@@ -981,6 +1065,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		AuthorMacro
 		scopeCurator = 2;
 		displayName = "Team Leader";
+		linkedItems[] = {"AFTP_helmet02_ale", "AFTP_vest01_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_ale", "AFTP_vest01_ale", Standard_Equipment};
 	};
 	
 	class aftp_01_gr_ale : aftp_01_ale {
@@ -992,6 +1078,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {StandardGR_Weapons};
 		magazines[] = {StandardGR_Ammo};
 		respawnMagazines[] = {StandardGR_Ammo};
+		linkedItems[] = {"AFTP_helmet01_ale", "AFTP_hvest01_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_ale", "AFTP_hvest01_ale", Standard_Equipment};
 	};	
 	
 	class aftp_01_ar_ale : aftp_01_ale {
@@ -1003,9 +1091,13 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {StandardAR_Weapons};
 		magazines[] = {StandardAR_Ammo};
 		respawnMagazines[] = {StandardAR_Ammo};
+		linkedItems[] = {"AFTP_helmet02_ale", "AFTP_hvest02_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet02_ale", "AFTP_hvest02_ale", Standard_Equipment};
 	};	
 	
 	class aftp_sf_ale : aftp_01_ale {
+		weapons[] = {SF_Weapons};
+		respawnWeapons[] = {SF_Weapons};
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -1013,6 +1105,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		attendant = true; 
 		canDeactivateMines = true;
         engineer = true;
+		linkedItems[] = {"AFTP_helmet03_ale", "AFTP_vest01_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_ale", "AFTP_vest01_ale", Standard_Equipment};
 	};
 	
 	class aftp_02_ale : aftp_01_ale {
@@ -1023,6 +1117,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
+		linkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest02_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest02_ale", Standard_Equipment};
 	};
 	
 	class aftp_03_ale : aftp_01_ale {
@@ -1046,8 +1142,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnWeapons[] = {Standard_Weapons};
 		magazines[] = {Standard_Ammo};
 		respawnMagazines[] = {Standard_Ammo};
-		linkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest01_ale",Standard_Equipment};
-		respawnLinkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest01_ale",Standard_Equipment};
+		linkedItems[] = {"AFTP_helmet03_ale", "AFTP_vest02_ale", Standard_Equipment};
+		respawnLinkedItems[] = {"AFTP_helmet03_ale", "AFTP_vest02_ale", Standard_Equipment};
 		Items[] = {};
 		RespawnItems[] = {};
 		uniformClass = "uni04_ale";
