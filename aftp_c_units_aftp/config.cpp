@@ -31,8 +31,57 @@ class UniformSlotInfo {
 };
 
 class cfgFactionClasses {
-	class aftp_units {
-		displayName = "AFTP Units";
+	class aftp_units_wz93 {
+		displayName = "AFTP Units Pantera";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_wzd93 {
+		displayName = "AFTP Units Pantera Desert";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_mc {
+		displayName = "AFTP Units Multicam";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_mct {
+		displayName = "AFTP Units Multicam Tropic";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_mca {
+		displayName = "AFTP Units Multicam Alpine";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_aau {
+		displayName = "AFTP Units A-TACS AU";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_afg {
+		displayName = "AFTP Units A-TACS FG";
+		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
+		priority = 1;
+		side = TWest;
+	};
+	
+	class aftp_units_ale {
+		displayName = "AFTP Units A-TACS LE";
 		icon = "\aftp_units\cfgfactionclasses_pl_ca.paa";
 		priority = 1;
 		side = TWest;
@@ -51,6 +100,8 @@ class CfgVehicles {
 	#include "backpacks.hpp"
 	
 };
+
+#include "groups.hpp"
 
 class cfgWeapons {
 	

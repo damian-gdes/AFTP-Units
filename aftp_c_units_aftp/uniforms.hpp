@@ -1,5 +1,6 @@
 		class uni01_wz93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera 01";
 		picture = "\aftp_units\data\ico_uni01_wz93.paa";
@@ -14,6 +15,7 @@
 	
 		class uni02_wz93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera 02";
 		picture = "\aftp_units\data\ico_uni02_wz93.paa";
@@ -29,6 +31,7 @@
 	
 		class uni03_wz93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera 03";
 		picture = "\aftp_units\data\ico_uni03_wz93.paa";
@@ -43,7 +46,9 @@
 	};
 	
 	class uni04_wz93 : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Pantera with fins";
 		picture = "\aftp_units\data\ico_uni03_wz93.paa";
 		
@@ -57,7 +62,9 @@
 	};
 	
 	class uni05_wz93 : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie Pantera camo";
 		picture = "\aftp_units\data\ico_ghillie_wz93.paa";
 		
@@ -72,6 +79,7 @@
 	
 			class uni01_wzd93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera Desert 01";
 		picture = "\aftp_units\data\ico_uni01_wzd93.paa";
@@ -86,6 +94,7 @@
 	
 		class uni02_wzd93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera Desert 02";
 		picture = "\aftp_units\data\ico_uni02_wzd93.paa";
@@ -101,6 +110,7 @@
 	
 		class uni03_wzd93 : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Pantera Desert 03";
 		picture = "\aftp_units\data\ico_uni03_wzd93.paa";
@@ -115,7 +125,9 @@
 	};
 	
 	class uni04_wzd93 : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Pantera Desert with fins";
 		picture = "\aftp_units\data\ico_uni03_wzd93.paa";
 		
@@ -129,7 +141,9 @@
 	};
 	
 	class uni05_wzd93 : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie Pantera Desert camo";
 		picture = "\aftp_units\data\ico_ghillie_wzd93.paa";
 		
@@ -144,6 +158,7 @@
 	
 		class uni01_mc : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam 01";
 		picture = "\aftp_units\data\ico_uni01_mc.paa";
@@ -158,6 +173,7 @@
 	
 		class uni02_mc : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam 02";
 		picture = "\aftp_units\data\ico_uni02_mc.paa";
@@ -173,6 +189,7 @@
 	
 		class uni03_mc : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam 03";
 		picture = "\aftp_units\data\ico_uni03_mc.paa";
@@ -187,7 +204,9 @@
 	};
 	
 	class uni04_mc : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Multicam with fins";
 		picture = "\aftp_units\data\ico_uni03_mc.paa";
 		
@@ -201,7 +220,9 @@
 	};
 	
 	class uni05_mc : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie Multicam camo";
 		picture = "\aftp_units\data\ico_ghillie_mc.paa";
 		
@@ -215,6 +236,7 @@
 	
 		class uni01_mct : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Tropic 01";
 		picture = "\aftp_units\data\ico_uni01_mct.paa";
@@ -229,6 +251,7 @@
 	
 		class uni02_mct : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Tropic 02";
 		picture = "\aftp_units\data\ico_uni02_mct.paa";
@@ -244,6 +267,7 @@
 	
 		class uni03_mct : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Tropic 03";
 		picture = "\aftp_units\data\ico_uni03_mct.paa";
@@ -258,7 +282,9 @@
 	};
 	
 	class uni04_mct : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Multicam Tropic with fins";
 		picture = "\aftp_units\data\ico_uni03_mct.paa";
 		
@@ -272,7 +298,9 @@
 	};
 	
 	class uni05_mct : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie Multicam Tropic camo";
 		picture = "\aftp_units\data\ico_ghillie_mct.paa";
 		
@@ -286,6 +314,7 @@
 	
 			class uni01_mca : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Alpine 01";
 		picture = "\aftp_units\data\ico_uni01_mca.paa";
@@ -300,6 +329,7 @@
 	
 		class uni02_mca : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Alpine 02";
 		picture = "\aftp_units\data\ico_uni02_mca.paa";
@@ -315,6 +345,7 @@
 	
 		class uni03_mca : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP Multicam Alpine 03";
 		picture = "\aftp_units\data\ico_uni03_mca.paa";
@@ -330,6 +361,7 @@
 	
 		class uni01_aau : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS AU 01";
 		picture = "\aftp_units\data\ico_uni01_aau.paa";
@@ -344,6 +376,7 @@
 	
 		class uni02_aau : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS AU 02";
 		picture = "\aftp_units\data\ico_uni02_aau.paa";
@@ -359,6 +392,7 @@
 	
 		class uni03_aau : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS AU 03";
 		picture = "\aftp_units\data\ico_uni03_aau.paa";
@@ -373,7 +407,9 @@
 	};
 	
 	class uni04_aau : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP A-TACS AU with fins";
 		picture = "\aftp_units\data\ico_uni03_aau.paa";
 		
@@ -387,7 +423,9 @@
 	};
 	
 	class uni05_aau : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie A-TACS AU camo";
 		picture = "\aftp_units\data\ico_ghillie_aau.paa";
 		
@@ -401,6 +439,7 @@
 	
 		class uni01_afg : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS FG 01";
 		picture = "\aftp_units\data\ico_uni01_afg.paa";
@@ -415,6 +454,7 @@
 	
 		class uni02_afg : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS FG 02";
 		picture = "\aftp_units\data\ico_uni02_afg.paa";
@@ -430,6 +470,7 @@
 	
 		class uni03_afg : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS FG 03";
 		picture = "\aftp_units\data\ico_uni03_afg.paa";
@@ -444,7 +485,9 @@
 	};
 	
 	class uni04_afg : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP A-TACS FG with fins";
 		picture = "\aftp_units\data\ico_uni03_afg.paa";
 		
@@ -458,7 +501,9 @@
 	};
 	
 	class uni05_afg : Uniform_Base {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP Ghillie A-TACS FG camo";
 		picture = "\aftp_units\data\ico_ghillie_afg.paa";
 		
@@ -472,6 +517,7 @@
 	
 		class uni01_ale : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS LE 01";
 		picture = "\aftp_units\data\ico_uni01_ale.paa";
@@ -486,6 +532,7 @@
 	
 		class uni02_ale : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS LE 02";
 		picture = "\aftp_units\data\ico_uni02_ale.paa";
@@ -501,6 +548,7 @@
 	
 		class uni03_ale : Uniform_Base {
 		scope = public;
+
 		author = "AFTP Golas & Waffel";
 		displayName = "AFTP A-TACS LE 03";
 		picture = "\aftp_units\data\ico_uni03_ale.paa";
@@ -515,7 +563,9 @@
 	};
 	
 	class uni04_ale : U_B_survival_uniform {
+		author = "AFTP Golas & Waffel";
 		scope = public;
+
 		displayName = "AFTP A-TACS LE with fins";
 		picture = "\aftp_units\data\ico_uni03_ale.paa";
 		
