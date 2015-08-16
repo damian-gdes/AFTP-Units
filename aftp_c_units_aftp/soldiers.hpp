@@ -2,7 +2,7 @@
 	class b_soldier_survival_F;
 	class B_Soldier_sniper_base_F;
 
-#define AuthorMacro 	author = "AFTP Golas & Waffel";
+#define AuthorMacro author = "AFTP Golas & Waffel";
 #define Standard_Equipment ItemGPS,ItemMap,ItemCompass,ItemWatch,ItemRadio, FirstAidKit, FirstAidKit, FirstAidKit
 #define Standard_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_MRCO_pointer_F", "hgun_Pistol_heavy_01_MRD_F"
 #define StandardGR_Weapons "Throw", "Put", "Rangefinder", "arifle_Mk20_GL_MRCO_pointer_F", "hgun_Pistol_heavy_01_MRD_F"
@@ -19,6 +19,7 @@
 		canCarryBackPack = 1;
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_wz93";
 		displayName = "Rifleman";
@@ -40,12 +41,14 @@
 	class aftp_01_tl_wz93 : aftp_01_wz93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_wz93 : aftp_01_wz93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -56,6 +59,7 @@
 	class aftp_01_ar_wz93 : aftp_01_wz93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -66,6 +70,7 @@
 	class aftp_sf_wz93 : aftp_01_wz93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -78,6 +83,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -90,6 +96,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -113,6 +120,7 @@
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -135,6 +143,7 @@
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		attendant = true; 
 	};
 	
@@ -145,6 +154,7 @@
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_wz93";
 		displayName = "Rifleman";
@@ -166,12 +176,14 @@
 	class aftp_01_tl_wzd93 : aftp_01_wzd93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_wzd93 : aftp_01_wzd93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -182,6 +194,7 @@
 	class aftp_01_ar_wzd93 : aftp_01_wzd93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -192,6 +205,7 @@
 	class aftp_sf_wzd93 : aftp_01_wzd93 {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -204,6 +218,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true;
 	};
@@ -216,6 +231,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -241,6 +257,7 @@
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -265,6 +282,7 @@
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		attendant = true; 
 	};
 	
@@ -275,6 +293,7 @@
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_mc";
 		displayName = "Rifleman";
@@ -296,12 +315,14 @@
 	class aftp_01_tl_mc : aftp_01_mc {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_mc : aftp_01_mc {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -312,6 +333,7 @@
 	class aftp_01_ar_mc : aftp_01_mc {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -322,6 +344,7 @@
 	class aftp_sf_mc : aftp_01_mc {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -334,6 +357,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic - Pantera Desert";
 		attendant = true;
 	};
@@ -343,6 +367,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -355,6 +380,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -380,6 +406,7 @@
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -404,6 +431,7 @@
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		attendant = true;
 	};
 	
@@ -414,6 +442,7 @@
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_mct";
 		displayName = "Rifleman";
@@ -435,12 +464,14 @@
 	class aftp_01_tl_mct : aftp_01_mct {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_mct : aftp_01_mct {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -451,6 +482,7 @@
 	class aftp_01_ar_mct : aftp_01_mct {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -461,6 +493,7 @@
 	class aftp_sf_mct : aftp_01_mct {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -473,6 +506,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -485,6 +519,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -510,6 +545,7 @@
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -534,6 +570,7 @@
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		attendant = true; 
 	};
 	
@@ -544,6 +581,7 @@
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_mca";
 		displayName = "Rifleman";
@@ -565,12 +603,14 @@
 	class aftp_01_tl_mca : aftp_01_mca {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_mca : aftp_01_mca {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -581,6 +621,7 @@
 	class aftp_01_ar_mca : aftp_01_mca {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -591,6 +632,7 @@
 	class aftp_sf_mca : aftp_01_mca {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -603,6 +645,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -614,6 +657,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 	};
 	
 		class aftp_04_mca : aftp_01_mca {
@@ -621,6 +665,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true;
@@ -633,6 +678,7 @@
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_aau";
 		displayName = "Rifleman";
@@ -654,12 +700,14 @@
 	class aftp_01_tl_aau : aftp_01_aau {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_aau : aftp_01_aau {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -670,6 +718,7 @@
 	class aftp_01_ar_aau : aftp_01_aau {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -680,6 +729,7 @@
 	class aftp_sf_aau : aftp_01_aau {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -692,6 +742,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -704,6 +755,7 @@
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -729,6 +781,7 @@
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -752,6 +805,7 @@
 		hiddenSelectionsTextures[] = {"\aftp_units\data\uni_aau.paa", "\A3\Characters_F\Common\Data\ghillie_desert_co.paa"};
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		attendant = true; 
 	};
@@ -764,6 +818,7 @@ class aftp_01_afg : B_Soldier_base_F {
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_afg";
 		displayName = "Rifleman";
@@ -785,12 +840,14 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_01_tl_afg : aftp_01_afg {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_afg : aftp_01_afg {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -801,6 +858,7 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_01_ar_afg : aftp_01_afg {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -811,6 +869,7 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_sf_afg : aftp_01_afg {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		displayName = "SF Operator";
 		attendant = true; 
@@ -823,6 +882,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -835,6 +895,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -860,6 +921,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
@@ -884,6 +946,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "A3\Characters_F\BLUFOR\b_sniper.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		attendant = true; 
 	};
 	
@@ -894,6 +957,7 @@ class aftp_01_afg : B_Soldier_base_F {
 
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		camouflage = 0.9;	// how dificult to spot - bigger - better spotable
 		backpack = "aftp_kitbag_ale";
 		displayName = "Rifleman";
@@ -915,12 +979,14 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_01_tl_ale : aftp_01_ale {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Team Leader";
 	};
 	
 	class aftp_01_gr_ale : aftp_01_ale {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Grenadier";
 		weapons[] = {StandardGR_Weapons};
 		respawnWeapons[] = {StandardGR_Weapons};
@@ -931,6 +997,7 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_01_ar_ale : aftp_01_ale {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Automatic Rifleman";
 		weapons[] = {StandardAR_Weapons};
 		respawnWeapons[] = {StandardAR_Weapons};
@@ -941,6 +1008,7 @@ class aftp_01_afg : B_Soldier_base_F {
 	class aftp_sf_ale : aftp_01_ale {
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "SF Operator";
 		attendant = true; 
 		canDeactivateMines = true;
@@ -952,6 +1020,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Medic";
 		attendant = true; 
 	};
@@ -962,6 +1031,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F\BLUFOR\b_soldier_02.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
@@ -986,6 +1056,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		model = "\A3\Characters_F_EPA\BLUFOR\b_soldier_survival_01.p3d";
 		scope = public;
 		AuthorMacro
+		scopeCurator = 2;
 		canDeactivateMines = true;
         engineer = true; 
 	};
