@@ -1,7 +1,7 @@
 	class B_Carryall_Base;
 	class B_Kitbag_Base;
 	class B_AssaultPack_Base ;
-	
+
 	class AFTP_carryall_wz93 : B_Carryall_Base {
 		scope = public;
 
@@ -12,7 +12,7 @@
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\AFTP_units\data\carryall_wz93.paa"};
 	};
-	
+
 	class AFTP_caryall_wzd93 : AFTP_carryall_wz93 {
 		displayName = "AFTP Backpack Carryall Pantera Desert";
 		picture = "\AFTP_units\data\ico_carryall_wzd93.paa";
@@ -22,7 +22,7 @@
 		scope = public;
 
 	};
-	
+
 	class AFTP_caryall_mc : AFTP_carryall_wz93 {
 		displayName = "AFTP Backpack Carryall Multicam";
 		picture = "\AFTP_units\data\ico_carryall_mc.paa";
@@ -32,7 +32,7 @@
 		scope = public;
 
 	};
-	
+
 	class AFTP_caryall_mct : AFTP_carryall_wz93 {
 		displayName = "AFTP Backpack Carryall Multicam Tropic";
 		picture = "\AFTP_units\data\ico_carryall_mct.paa";
@@ -52,7 +52,7 @@
 		scope = public;
 
 	};
-	
+
 	class AFTP_caryall_aau : AFTP_carryall_wz93 {
 		displayName = "AFTP Backpack Carryall A-TACS AU";
 		picture = "\AFTP_units\data\ico_carryall_aau.paa";
@@ -62,7 +62,7 @@
 		scope = public;
 
 	};
-	
+
 	class AFTP_caryall_afg : AFTP_carryall_wz93 {
 		displayName = "AFTP Backpack Carryall A-TACS FG";
 		picture = "\AFTP_units\data\ico_carryall_afg.paa";
@@ -81,7 +81,7 @@
 		author = "AFTP Golas & Waffel";
 	};
 	*/
-	
+
 		class AFTP_kitbag_wz93 : B_Kitbag_Base {
 		scope = public;
 
@@ -115,7 +115,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_kitbag_afg : AFTP_kitbag_wz93 {
 		displayName = "AFTP Kitbag A-TACS FG";
 		picture = "\AFTP_units\data\ico_kitbag_afg.paa";
@@ -125,7 +125,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_kitbag_ale : AFTP_kitbag_wz93 {
 		displayName = "AFTP Kitbag A-TACS LE";
 		picture = "\AFTP_units\data\ico_kitbag_ale.paa";
@@ -135,7 +135,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_kitbag_mc : AFTP_kitbag_wz93 {
 		displayName = "AFTP Kitbag Multicam";
 		picture = "\AFTP_units\data\ico_kitbag_mc.paa";
@@ -155,7 +155,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_kitbag_mct : AFTP_kitbag_wz93 {
 		displayName = "AFTP Kitbag Multicam Tropic";
 		picture = "\AFTP_units\data\ico_kitbag_mct.paa";
@@ -164,7 +164,7 @@
 		author = "AFTP Golas & Waffel";
 		scope = public;
 
-	};	
+	};
 
 	class AFTP_assaultpack_wz93 : B_AssaultPack_Base {
 		scope = public;
@@ -186,7 +186,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_assaultpack_mc : AFTP_assaultpack_wz93 {
 		displayName = "AFTP Assault Pack Multicam";
 		picture = "\AFTP_units\data\ico_assaultpack_mc.paa";
@@ -206,7 +206,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_assaultpack_mct : AFTP_assaultpack_wz93 {
 		displayName = "AFTP Assault Pack Multicam Tropic";
 		picture = "\AFTP_units\data\ico_assaultpack_mct.paa";
@@ -216,7 +216,7 @@
 		scope = public;
 
 	};
-	
+
 		class AFTP_assaultpack_aau : AFTP_assaultpack_wz93 {
 		displayName = "AFTP Assault Pack A-TACS AU";
 		picture = "\AFTP_units\data\ico_assaultpack_aau.paa";
@@ -236,7 +236,7 @@
 		scope = public;
 
 	};
-	
+
 	/*
 		class AFTP_assaultpack_ale : AFTP_assaultpack_wz93 {
 		displayName = "AFTP Assault Pack A-TACS LE";

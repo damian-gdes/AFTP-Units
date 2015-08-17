@@ -48,6 +48,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_wz93", "AFTP_vest01_wz93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_wz93", "AFTP_vest01_wz93", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_wz93 : aftp_01_wz93 {
@@ -74,6 +75,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_wz93", "AFTP_hvest02_wz93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_wz93", "AFTP_hvest02_wz93", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_wz93 : aftp_01_wz93 {
@@ -101,6 +103,8 @@
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest02_wz93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_wz93", "AFTP_vest02_wz93", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_wz93 : aftp_01_wz93 {
@@ -115,6 +119,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_wz93 : b_soldier_survival_F {
@@ -194,6 +200,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_vest01_wzd93", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_wzd93 : aftp_01_wzd93 {
@@ -220,6 +227,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_hvest02_wzd93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_wzd93", "AFTP_hvest02_wzd93", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_wzd93 : aftp_01_wzd93 {
@@ -247,6 +255,8 @@
 		attendant = true;
 		linkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_wzd93", "AFTP_vest02_wzd93", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_wzd93 : aftp_01_wzd93 {
@@ -261,6 +271,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_wzd93 : b_soldier_survival_F {
@@ -345,6 +357,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_mc", "AFTP_vest01_mc", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mc", "AFTP_vest01_mc", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_mc : aftp_01_mc {
@@ -371,6 +384,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_mc", "AFTP_hvest02_mc", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mc", "AFTP_hvest02_mc", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_mc : aftp_01_mc {
@@ -398,16 +412,8 @@
 		attendant = true;
 		linkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest02_mc", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_mc", "AFTP_vest02_mc", Standard_Equipment};
-	};
-	
-	class aftp_02_mc : aftp_01_mc {
-		uniformClass = "uni02_mc";
-		model = "\A3\Characters_F\BLUFOR\b_soldier_03.p3d";
-		scope = public;
-		AuthorMacro
-		scopeCurator = 2;
-		displayName = "Medic";
-		attendant = true; 
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_mc : aftp_01_mc {
@@ -422,6 +428,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_mc : b_soldier_survival_F {
@@ -506,6 +514,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_mct", "AFTP_vest01_mct", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mct", "AFTP_vest01_mct", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_mct : aftp_01_mct {
@@ -532,6 +541,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_mct", "AFTP_hvest02_mct", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mct", "AFTP_hvest02_mct", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_mct : aftp_01_mct {
@@ -559,6 +569,8 @@
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest02_mct", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_mct", "AFTP_vest02_mct", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_mct : aftp_01_mct {
@@ -573,6 +585,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_mct : b_soldier_survival_F {
@@ -657,6 +671,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_mca", "AFTP_vest01_mca", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mca", "AFTP_vest01_mca", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_mca : aftp_01_mca {
@@ -683,6 +698,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_mca", "AFTP_hvest02_mca", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_mca", "AFTP_hvest02_mca", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_mca : aftp_01_mca {
@@ -710,6 +726,8 @@
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_mca", "AFTP_vest02_mca", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_mca", "AFTP_vest02_mca", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_mca : aftp_01_mca {
@@ -731,6 +749,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true;
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 		class aftp_01_aau : B_Soldier_base_F {
@@ -765,6 +785,7 @@
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_aau", "AFTP_vest01_aau", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_aau", "AFTP_vest01_aau", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_aau : aftp_01_aau {
@@ -791,6 +812,7 @@
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_aau", "AFTP_hvest02_aau", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_aau", "AFTP_hvest02_aau", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_aau : aftp_01_aau {
@@ -818,6 +840,8 @@
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest02_aau", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_aau", "AFTP_vest02_aau", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_aau : aftp_01_aau {
@@ -832,6 +856,8 @@
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_aau : b_soldier_survival_F {
@@ -916,6 +942,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		displayName = "Team Leader";
 		linkedItems[] = {"AFTP_helmet02_afg", "AFTP_vest01_afg", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_afg", "AFTP_vest01_afg", Standard_Equipment};
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_gr_afg : aftp_01_afg {
@@ -942,6 +969,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_afg", "AFTP_hvest02_afg", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_afg", "AFTP_hvest02_afg", Standard_Equipment};
+		icon = "iconManMG";
 	};
 	
 	class aftp_sf_afg : aftp_01_afg {
@@ -969,6 +997,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest02_afg", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_afg", "AFTP_vest02_afg", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_afg : aftp_01_afg {
@@ -983,6 +1013,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_afg : b_soldier_survival_F {
@@ -1038,7 +1070,6 @@ class aftp_01_afg : B_Soldier_base_F {
 		_generalMacro = "B_Soldier_base_F";
 		faction = "aftp_units_ale";
 		canCarryBackPack = 1;
-
 		scope = public;
 		AuthorMacro
 		scopeCurator = 2;
@@ -1058,6 +1089,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		Items[] = {};
 		RespawnItems[] = {};
 		model = "\A3\Characters_F\BLUFOR\b_soldier_01.p3d";
+		icon = "iconManLeader";
 	};
 	
 	class aftp_01_tl_ale : aftp_01_ale {
@@ -1093,6 +1125,7 @@ class aftp_01_afg : B_Soldier_base_F {
 		respawnMagazines[] = {StandardAR_Ammo};
 		linkedItems[] = {"AFTP_helmet02_ale", "AFTP_hvest02_ale", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet02_ale", "AFTP_hvest02_ale", Standard_Equipment};
+		icon = "iconManMG";
 	};	
 	
 	class aftp_sf_ale : aftp_01_ale {
@@ -1119,6 +1152,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		attendant = true; 
 		linkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest02_ale", Standard_Equipment};
 		respawnLinkedItems[] = {"AFTP_helmet01_ale", "AFTP_vest02_ale", Standard_Equipment};
+		picture = "pictureHeal";
+		icon = "iconManMedic";
 	};
 	
 	class aftp_03_ale : aftp_01_ale {
@@ -1131,6 +1166,8 @@ class aftp_01_afg : B_Soldier_base_F {
 		displayName = "Engineer";
 		canDeactivateMines = true;
         engineer = true; 
+		icon = "iconManEngineer";
+		picture = "pictureRepair";
 	};
 	
 	class aftp_04_ale : b_soldier_survival_F {

@@ -1461,9 +1461,9 @@ class CfgGroups {
 				};
 
 				/*
-								
+
 								add when sniper ghillie ready
-								
+
 								class Sniperteam_ale {
                                         name = "Sniper Team";
                                         faction = "aftp_units_ale";
@@ -1482,7 +1482,7 @@ class CfgGroups {
                                                 position[] = {1,0,0};
                                         };
                                 };
-								
+
 								*/
 
 				class Squad_ale {
@@ -1567,9 +1567,9 @@ class CfgGroups {
 				name = "SF Operators";
 
 				/*
-							
-							add when ready 
-							
+
+							add when ready
+
 							class divers_mca {
 								name = "Diver team"
 								faction = "aftp_units_mca";
@@ -1600,7 +1600,7 @@ class CfgGroups {
                                                 position[] = {1,1,0}; //Position in the formation
                                         };
 							};
-							
+
 							*/
 				class sfoperators_mca {
 					name = "SF Team"
@@ -1684,9 +1684,9 @@ class CfgGroups {
 				};
 
 				/*
-								
+
 								add when sniper ghillie ready
-								
+
 								class Sniperteam_mca {
                                         name = "Sniper Team";
                                         faction = "aftp_units_mca";
@@ -1705,7 +1705,7 @@ class CfgGroups {
                                                 position[] = {1,0,0};
                                         };
                                 };
-								
+
 								*/
 
 				class Squad_mca {
